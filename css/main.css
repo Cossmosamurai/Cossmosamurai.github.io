@@ -722,6 +722,21 @@ a {
 		align-items: center;
 		margin: 0 auto;
 	}
+
+	.footer {
+		position: absolute;
+	}
+
+	.icons {
+		flex-direction: column;
+		display: block;
+		justify-content: center;
+	}
+
+	.footer_offer {
+		display: block;
+		flex-direction: column;
+	}
 }
 
 .animated {
