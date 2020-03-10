@@ -97,17 +97,19 @@ $(function () {
 	        }
 	    });
 	});
+
 });
 
 
+
 // открытие по кнопке
-$('.js-button_1').click(function initHandler () {
+$('.product_1').click(function initHandler () {
 	$('.container').css('filter', 'blur(2px)');
 	$('.js-overlay').fadeIn();
 	$('.js-overlay').addClass('disabled');
 });
 
-$('.js-button_2, .js-button_3, .js-button_4, .js-button_5, .js-button_6, .js-button_7').click(function initHandler () {
+$('.product_2, .product_3, .product_4, .product_5, .product_6, .product_7').click(function initHandler () {
 	$('.container').css('filter', 'blur(2px)');
 	$('.js-overlay_2').fadeIn();
 	$('.js-overlay_2').addClass('disabled');

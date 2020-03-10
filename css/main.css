@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6, p {
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .container {
 	width: 1170px;
 	margin: 0 auto;
@@ -602,33 +606,124 @@ h1, h2, h3, h4, h5, h6, p {
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
 	.container {
-		width: 320px;
+		max-width: 576px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 
 	}
 
 	.product {
-		margin-left: 9px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.product_2, .product_4, .product_6 {
+		margin-top: 300px;
 	}
 
 	.row {
-		width: 320px;
+		max-width: 576px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 		
 		}
 
 	.wrapper {
-		width: 320px;
+		max-width: 576px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.products {
 		width: 320px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.shop {
 		width: 320px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.footer.animate {
 		opacity: 0;
+		text-align: center;
 	}
 
+	.popup {
+		top: 80%;
+	}
+
+	.over {
+		z-index: 998;
+		max-height: 100vh;
+		bottom: 0;
+	}
+
+	.header {
+		z-index: 997;
+	}
+
+	.close {
+		z-index: 9999;
+	}
+
+	.slide_slide {
+		text-align: center;
+		max-width: 640px;
+		margin-left: 27px;
+	}
+
+	.slider {
+		text-align: center;
+		float: center;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.slider.slick-arrow {
+		display: none;
+	}
+
+	.slick-list {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.slick-track {
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.slider-item {
+		text-align: center;
+		justify-content: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.popup-offer {
+		justify-content: center;
+		text-align: center;
+		-ms-align-items: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+}
+
+.animated {
+	opacity: 100%;
 }
