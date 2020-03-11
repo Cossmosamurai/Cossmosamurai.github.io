@@ -598,20 +598,30 @@ a {
 		top: 50px;
 		color: #000;
 	}
+
+		.header {
+		position: absolute;
+		width: auto;
+		z-index: 20;
+	}
 }
 
 /* 320px - 576px */
 @media screen and (max-width: 576px) {
 	.container {
-		max-width: 576px;
+		max-width: 90%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-
+		margin: 0 auto;
 	}
 
 	.product {
 		text-align: center;
+		margin: 0 auto;
+	}
+
+	.products {
 		margin: 0 auto;
 	}
 
@@ -620,7 +630,7 @@ a {
 	}
 
 	.row {
-		max-width: 576px;
+		width: 90%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
@@ -628,24 +638,26 @@ a {
 		}
 
 	.wrapper {
-		max-width: 576px;
+		max-width: 90%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		margin: 0 auto;
 	}
 
 	.products {
-		width: 320px;
+		width: 90%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.shop {
-		width: 320px;
+		width: 90%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		margin: 0 auto;
 	}
 
 	.footer.animate {
