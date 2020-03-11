@@ -569,61 +569,30 @@ a {
 /* 576px - 768px */
 @media screen and (max-width: 768px) {
 	.container {
-		width: 540px;
+		width: 100%;
+		/*min-width: 290px;*/
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
 	}
 
-	.row {
-		width: 540px;
-	}
-
-	.wrapper {
-		width: 540px;
-	}
-
-	.products {
-		width: 540px;
-	}
-
-	.title {
+	.product {
+		text-align: center;
 		width: 100%;
 	}
 
-	.popup {
-		padding: 20px 30px;
-	}
-
-	.close{
-		margin: 0;
-		position: relative;
-		top: 50px;
-		color: #000;
-	}
-
-		.header {
-		position: absolute;
-		width: auto;
-		z-index: 20;
-	}
-}
-
-/* 320px - 576px */
-@media screen and (max-width: 576px) {
-	.container {
-		max-width: 70%;
+	.products {
+		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
-	.product {
-		text-align: center;
-	}
-
-	.products {
-	}
-
 	.title {
-		width: 100%;
+		width: auto;
+		margin-top: 130px;
+		font-size: 28px;
 	}
 
 	.product_2, .product_4, .product_6 {
@@ -631,7 +600,7 @@ a {
 	}
 
 	.row {
-		width: 50%;
+		width: 100%;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
@@ -639,24 +608,134 @@ a {
 		}
 
 	.wrapper {
-		max-width: 70%;
-		text-align: center;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.products {
-		width: 50%;
+		width: 100%;
+		/*min-width: 290px;*/
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.shop {
-		width: 50%;
+		width: 100%;
+		max-width: 450px;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
+		margin: 0 auto;
+	}
+
+	.title {
+		width: 100%;
+	}
+
+	.popup {
+		left: 0;
+	    transform: translate(0px, 0px);
+	    overflow: auto;
+	    height: 100%;
+	    top: 0;
+	    bottom: 0;
+		z-index: 9999;
+		border-radius: 0;
+	}
+
+	.over {
+		width: auto;
+		height: auto;
+		position: fixed;
+		overflow: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		z-index: 9999;
+		border-radius: 0;
+	}
+
+	.close {
+		margin-bottom: 20px;
+		z-index: 9999;
+		background-color: red;
+		color: #fff;
+		font-weight: 400;
+		border-radius: 100px;
+		padding: 5px 10px;
+		transition: .3s;
+		top: 50px;
+	}
+
+	.close:hover {
+		background-color: rgba(0,0,0,0.5);
+		color: #fff;
+	}
+
+		.header {
+		position: absolute;
+		z-index: 20;
+	}
+
+	.order-btns {
+		display: flex;
+    	justify-content: center;
+	}
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+	.container {
+		width: 100%;
+		/*min-width: 290px;*/
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+
+	.product {
+		text-align: center;
+		width: 100%;
+	}
+
+	.products {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.title {
+		width: auto;
+		margin-top: 130px;
+		font-size: 28px;
+	}
+
+	.product_2, .product_4, .product_6 {
+		margin-top: 300px;
+	}
+
+	.row {
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		
+		}
+
+	.wrapper {
+		width: 100%;
+		/*min-width: 290px;*/
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.shop {
+		width: 100%;
+		max-width: 450px;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
 	}
 
 	.footer.animate {
@@ -672,6 +751,7 @@ a {
 	    top: 0;
 	    bottom: 0;
 		z-index: 9999;
+		border-radius: 0;
 	}
 
 	.over {
@@ -684,10 +764,12 @@ a {
 		bottom: 0;
 		top: 0;
 		z-index: 9999;
+		border-radius: 0;
 	}
 
 	.order-btn {
 		margin: 0 10px;
+		font-size: 14px;
 	}
 
 	.order-btns {
@@ -731,7 +813,6 @@ a {
 
 	.header {
 		position: absolute;
-		width: auto;
 		z-index: 20;
 	}
 
@@ -753,9 +834,13 @@ a {
 	}
 
 	.slide_slide {
+		position: absolute;
 		text-align: center;
-		max-width: 640px;
-		margin-left: 27px;
+		max-width: 480px;
+		margin: 0 auto;
+		width: 100%;
+		top: 0;
+		height: 320px;
 	}
 
 	.slider {
@@ -783,6 +868,7 @@ a {
 		justify-content: center;
 		align-items: center;
 		margin: 0 auto;
+		height: 400px;
 	}
 
 	.slider-item {
@@ -802,8 +888,13 @@ a {
 		width: auto;
 	}
 
+	.offer-text {
+		margin-top: 200px;
+	}
+
 	.popup-text {
 		width: 100%;
+		font-size: 14px;
 	}
 
 	.product-title {
@@ -812,12 +903,17 @@ a {
 
 	.footer {
 		position: absolute;
+		width: 100%;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.icons {
 		flex-direction: column;
 		display: block;
 		justify-content: center;
+		width: 70%;
 	}
 
 	.footer_offer {
