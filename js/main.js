@@ -109,16 +109,46 @@ $('.product_1').click(function initHandler () {
 	$('.js-overlay').addClass('disabled');
 });
 
-$('.product_2, .product_3, .product_4, .product_5, .product_6, .product_7').click(function initHandler () {
+$('.product_2').click(function initHandler () {
 	$('.container').css('filter', 'blur(2px)');
 	$('.js-overlay_2').fadeIn();
 	$('.js-overlay_2').addClass('disabled');
 });
 
+$('.product_3').click(function initHandler () {
+	$('.container').css('filter', 'blur(2px)');
+	$('.js-overlay_3').fadeIn();
+	$('.js-overlay_3').addClass('disabled');
+});
+
+$('.product_4').click(function initHandler () {
+	$('.container').css('filter', 'blur(2px)');
+	$('.js-overlay_4').fadeIn();
+	$('.js-overlay_4').addClass('disabled');
+});
+
+$('.product_5').click(function initHandler () {
+	$('.container').css('filter', 'blur(2px)');
+	$('.js-overlay_5').fadeIn();
+	$('.js-overlay_5').addClass('disabled');
+});
+
+$('.product_6').click(function initHandler () {
+	$('.container').css('filter', 'blur(2px)');
+	$('.js-overlay_6').fadeIn();
+	$('.js-overlay_6').addClass('disabled');
+});
+
+$('.product_7').click(function initHandler () {
+	$('.container').css('filter', 'blur(2px)');
+	$('.js-overlay_7').fadeIn();
+	$('.js-overlay_7').addClass('disabled');
+});
+
 
 // Зфкрыть на крестик
 $('.close').click(function() {
-	$('.js-overlay, .js-overlay_2').fadeOut();
+	$('.js-overlay, .js-overlay_2, .js-overlay_3, .js-overlay_4, .js-overlay_5, .js-overlay_6, .js-overlay_7').fadeOut();
 	$('.container').css('filter', 'none');
 })
 
@@ -127,7 +157,7 @@ $('.close').click(function() {
 $(document).mouseup(function (e) {
 	var popup = $('.js-popup');
 	if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-		$('.js-overlay, .js-overlay_2').fadeOut();
+		$('.js-overlay, .js-overlay_2, .js-overlay_3, .js-overlay_4, .js-overlay_5, .js-overlay_6, .js-overlay_7').fadeOut();
 		$('.container').css('filter', 'none');
 	}
 });
