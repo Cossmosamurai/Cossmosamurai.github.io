@@ -169,6 +169,40 @@ $(document).mouseup(function (e) {
 
 $(document).ready(function(){
 	$('.slider').slick({
-	
+		dots: true,
+	  	infinite: true,
+	  	speed: 500,
+	  	fade: true,
+	  	cssEase: 'linear',
+	  	centerMode: true,
+	  	  responsive: [{
+
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        slidesToShow: 1
+      
+    }
+    }]
 	});
 });
+
+var num = 0; 
+ 
+function next() { 
+  var slider = document.getElementById("slider"); 
+  num++; 
+  if(num >= images.length) { 
+    num = 0; 
+  } 
+  slider.src = images[num]; 
+  } 
+ 
+function prev() { 
+  var slider = document.getElementById("slider"); 
+  num--; 
+  if(num < 0) { 
+    num = images.length-1; 
+  } 
+  slider.src = images[num]; 
+}
