@@ -347,8 +347,8 @@ a {
 	font-weight: 800;
 	display: inline-block;
 	text-decoration: none;
-	color: #333;
-	border: 1px solid #fc472e;
+	color: #f4f4f4;
+	background: #fc472e;
 	padding: 14px 28px;
 	border-radius: 100px;
 	transition: .3s;
@@ -356,8 +356,9 @@ a {
 }
 
 .order-btn:hover {
-	background: #fc472e;
-	color: #fff;
+	border: 1px solid #fc472e;
+	background: none;
+	color: #000;
 }
 
 .slide_slide {
@@ -860,7 +861,7 @@ a {
 	}
 
 	.order-btn {
-		margin: 0 3px;
+		margin: 0 15px;
 		font-size: 14px;
 	}
 
@@ -960,7 +961,6 @@ a {
 		text-align: center;
 		justify-content: center;	/*слайдер*/
 		align-items: center;
-		margin: 0 auto;
 		height: 400px;
 	}
 
